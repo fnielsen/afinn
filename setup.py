@@ -17,5 +17,4 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.2',
         ],
-    test_requires=['pytest', 'flake8', 'flake8-docstrings'],
     )

@@ -1,0 +1,1 @@
+from afinn import Afinn

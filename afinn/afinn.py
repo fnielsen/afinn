@@ -11,19 +11,43 @@ from os.path import dirname, join
 
 
 LANGUAGE_TO_FILENAME = {
+    'da': 'AFINN-da-28.txt',
     'en': 'AFINN-111.txt'
     }
 
 
 class Afinn(object):
 
-    """Sentiment analyzer."""
+    """Sentiment analyzer.
+
+    Examples
+    --------
+    >>> afinn = Afinn()
+    >>> afinn.score('This is oh so bad.') < 0
+    True
+
+    >>> afinn = Afinn(language='da')
+    >>> afinn.score('Det er bare vidunderlig!!!') > 0
+    True
+
+    """
 
     def __init__(self, language="en"):
-        """Setup."""
+        """Setup dictionary from data file.
+
+        The language parameter can be set to English (en) or Danish (da).
+
+        Parameters
+        ----------
+        language : 'en' or 'da', optional
+            Specify language dictionary
+
+        """
         filename = LANGUAGE_TO_FILENAME[language]
         full_filename = self.full_filename(filename)
         self.setup_from_file(full_filename)
+
+        self._word_pattern = re.compile('\w+', flags=re.UNICODE)
 
     def data_dir(self):
         """Return directory where the text files are.
@@ -103,6 +127,7 @@ class Afinn(object):
         return word_dict
 
     def _setup_pattern(self):
+        """Pattern for identification of words from data files."""
         words = list(self._dict)
 
         # The longest words are first in the list
@@ -116,7 +141,7 @@ class Afinn(object):
                                    flags=re.UNICODE)
 
     def find_all(self, text, clean_whitespace=True):
-        """Find all words in a text.
+        """Find words in a text matching the dictionary.
 
         The text is automatically lower-cased.
 
@@ -126,7 +151,7 @@ class Afinn(object):
         ----------
         text : str
             String with text where words are to be found.
-        clean_whitespace : bool
+        clean_whitespace : bool, optional
             Change multiple whitespaces to a single.
 
         Returns
@@ -146,18 +171,70 @@ class Afinn(object):
         words = self._pattern.findall(text.lower())
         return words
 
+    def split(self, text):
+        """Split a string into words.
+
+        Parameters
+        ----------
+        text : str
+            String with text that should be split
+
+        Returns
+        -------
+        wordlist : list of str
+            List of words
+
+        Examples
+        --------
+        >>> afinn = Afinn()
+        >>> afinn.split('Hello, world!')
+        ['Hello', 'world']
+
+        """
+        wordlist = self._word_pattern.findall(text)
+        return wordlist
+
     def score_with_pattern(self, text):
         """Score text based on pattern matching.
+
+        Performs the actual sentiment analysis on a text. It uses a regular
+        expression match against the word list.
 
         Parameters
         ----------
         text : str
             Text to be analyzed for sentiment.
 
+        Returns
+        -------
+        score : float
+            Sentiment analysis score for text
+
         """
         words = self.find_all(text)
         word_scores = (self._dict[word] for word in words)
-        text_score = float(sum(word_scores))
-        return text_score
+        score = float(sum(word_scores))
+        return score
+
+    def score_with_wordlist(self, text):
+        """Score text based on initial word split.
+
+        Performs the actual sentiment analysis on a text.
+
+        Parameters
+        ----------
+        text : str
+            Text to be analyzed for sentiment.
+
+        Returns
+        -------
+        score : float
+            Sentiment analysis score for text
+
+        """
+        words = self.split(text)
+        word_scores = (self._dict.get(word.lower(), 0.0) for word in words)
+        score = float(sum(word_scores))
+        return score
 
     score = score_with_pattern

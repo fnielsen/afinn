@@ -128,3 +128,15 @@ def test_data():
                 assert type(int(score)) == int
 
 
+def test_emoticon():
+    afinn = Afinn()
+    afinn.setup_from_file(join(afinn.data_dir(), 'AFINN-emoticon-8.txt'),
+                          with_word_boundary=False)
+    score = afinn.score(':-)')
+    assert score > 0
+
+    score = afinn.score('This is a :-) smiley')
+    assert score > 0
+
+    score = afinn.score('Just so XOXO.')
+    assert score > 0

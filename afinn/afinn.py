@@ -20,6 +20,8 @@ class Afinn(object):
 
     """Sentiment analyzer.
 
+    The text input should be in Unicode.
+
     Examples
     --------
     >>> afinn = Afinn()
@@ -52,6 +54,9 @@ class Afinn(object):
     def data_dir(self):
         """Return directory where the text files are.
 
+        The sentiment wordlists are distributed in a subdirectory.
+        This function returns the path to that subdirectory.
+
         Returns
         -------
         path : str
@@ -70,6 +75,8 @@ class Afinn(object):
 
     def full_filename(self, filename):
         """Return filename with full with data directory.
+
+        Prepending the path of the data directory to the filename.
 
         Parameters
         ----------
@@ -94,6 +101,9 @@ class Afinn(object):
 
     def setup_from_file(self, filename):
         """Setup data from data file.
+
+        Read the word file and setup the regular expression pattern for
+        matching.
 
         Parameters
         ----------
@@ -141,7 +151,9 @@ class Afinn(object):
                                    flags=re.UNICODE)
 
     def find_all(self, text, clean_whitespace=True):
-        """Find words in a text matching the dictionary.
+        """Find all tokens in a text matching the dictionary.
+
+        Words that do not match the dictionary is not returned in the wordlist.
 
         The text is automatically lower-cased.
 

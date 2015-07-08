@@ -11,7 +11,7 @@ from os.path import dirname, join
 
 
 LANGUAGE_TO_FILENAME = {
-    'da': 'AFINN-da-28.txt',
+    'da': 'AFINN-da-32.txt',
     'en': 'AFINN-111.txt'
     }
 

@@ -99,7 +99,7 @@ class Afinn(object):
         """
         return join(self.data_dir(), filename)
 
-    def setup_from_file(self, filename):
+    def setup_from_file(self, filename, with_word_boundary=True):
         """Setup data from data file.
 
         Read the word file and setup the regular expression pattern for
@@ -112,7 +112,7 @@ class Afinn(object):
 
         """
         self._dict = self.read_word_file(filename)
-        self._setup_pattern()
+        self._setup_pattern(with_word_boundary=with_word_boundary)
 
     @staticmethod
     def read_word_file(filename):
@@ -136,8 +136,18 @@ class Afinn(object):
                 word_dict[word] = int(score)
         return word_dict
 
-    def _setup_pattern(self):
-        """Pattern for identification of words from data files."""
+    def _setup_pattern(self, with_word_boundary=True):
+        """Pattern for identification of words from data files.
+
+        Setup of regular expression pattern for matching phrases from the data
+        files.
+
+        Parameters
+        ----------
+        with_word_boundary : bool
+            Add word boundary match to the regular expression
+
+        """
         words = list(self._dict)
 
         # The longest words are first in the list
@@ -147,8 +157,12 @@ class Afinn(object):
         words = [re.escape(word) for word in words]
 
         # Setup compiled pattern
-        self._pattern = re.compile(r"\b(" + "|".join(words) + r")\b",
-                                   flags=re.UNICODE)
+        if with_word_boundary:
+            self._pattern = re.compile(r"\b(" + "|".join(words) + r")\b",
+                                       flags=re.UNICODE)
+        else:
+            self._pattern = re.compile(r"(" + "|".join(words) + r")",
+                                       flags=re.UNICODE)
 
     def find_all(self, text, clean_whitespace=True):
         """Find all tokens in a text matching the dictionary.

@@ -10,6 +10,12 @@ Examples
     >>> afinn = Afinn()
     >>> afinn.score('This is utterly excellent!')
     3.0
+    
+In Danish:
+
+    >>> afinn = Afinn(language='da')
+    >>> afinn.score('Hvis ikke det er det mest afskyelige flueknepperi...')
+    -6.0
 
 Travis tests
 ------------

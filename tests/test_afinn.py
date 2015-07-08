@@ -72,6 +72,9 @@ def test_danish():
     score = afinn.score(u('besv\xe6r'))
     assert score < 0
 
+    score = afinn.score(u('D\xc5RLIG!!!'))
+    assert score < 0
+
 
 def test_score_with_pattern():
     afinn = Afinn(language='da')

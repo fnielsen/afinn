@@ -16,6 +16,12 @@ In Danish:
     >>> afinn = Afinn(language='da')
     >>> afinn.score('Hvis ikke det er det mest afskyelige flueknepperi...')
     -6.0
+    
+With emoticons:
+
+    >>> afinn = Afinn(emoticons=True)
+    >>> afinn.score('I saw that yesterday :)')
+    2.0
 
 Citation
 --------

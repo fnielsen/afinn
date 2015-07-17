@@ -58,3 +58,6 @@ target/
 
 # Emacs backup
 *.*~
+
+# IPython Notebook checkpoints
+notebooks/.ipynb_checkpoints/*

@@ -134,7 +134,7 @@ def test_data():
 def test_emoticon():
     afinn = Afinn()
     afinn.setup_from_file(join(afinn.data_dir(), 'AFINN-emoticon-8.txt'),
-                          with_word_boundary=False)
+                          word_boundary=False)
     score = afinn.score(':-)')
     assert score > 0
 
@@ -143,3 +143,30 @@ def test_emoticon():
 
     score = afinn.score('Just so XOXO.')
     assert score > 0
+
+
+def test_words_and_emoticons():
+    afinn = Afinn(emoticons=True)
+
+    score = afinn.score(':-)')
+    assert score > 0
+
+    score = afinn.score('BAD BAD BAD :-)')
+    assert score < 0
+
+
+def test_emoticon_upper_case():
+    afinn = Afinn()
+    afinn.setup_from_file(join(afinn.data_dir(), 'AFINN-emoticon-8.txt'),
+                          word_boundary=False)
+
+    score = afinn.score(':d')
+    assert score == 0
+
+    # TODO
+    score = afinn.score(':D')
+    # assert score > 0
+
+    score = afinn.score('It is so: :D')
+    # assert score > 0 
+

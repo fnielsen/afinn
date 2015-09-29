@@ -12,9 +12,23 @@ from os.path import dirname, join
 
 LANGUAGE_TO_FILENAME = {
     'da': 'AFINN-da-32.txt',
-    'en': 'AFINN-111.txt',
+    'en': 'AFINN-en-165.txt',
     'emoticons': 'AFINN-emoticon-8.txt',
     }
+
+
+class AfinnException(Exception):
+
+    """Base for exceptions raised in this module."""
+
+    pass
+
+
+class WordListReadingError(AfinnException):
+
+    """Exception for error when reading information form data files."""
+
+    pass
 
 
 class Afinn(object):
@@ -165,8 +179,12 @@ class Afinn(object):
         """
         word_dict = {}
         with codecs.open(filename, encoding='UTF-8') as fid:
-            for line in fid:
-                word, score = line.strip().split('\t')
+            for n, line in enumerate(fid):
+                try:
+                    word, score = line.strip().split('\t')
+                except ValueError:
+                    msg = 'Error in line %d of %s' % (n + 1, filename)
+                    raise WordListReadingError(msg)
                 word_dict[word] = int(score)
         return word_dict
 

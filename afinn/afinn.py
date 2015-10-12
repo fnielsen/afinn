@@ -18,21 +18,18 @@ LANGUAGE_TO_FILENAME = {
 
 
 class AfinnException(Exception):
-
     """Base for exceptions raised in this module."""
 
     pass
 
 
 class WordListReadingError(AfinnException):
-
     """Exception for error when reading information form data files."""
 
     pass
 
 
 class Afinn(object):
-
     """Sentiment analyzer.
 
     The text input should be in Unicode.

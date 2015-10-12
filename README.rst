@@ -31,6 +31,11 @@ If you as a scientist use the wordlist or the code please cite this one:
 
 Paper with supplement: http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/6006/pdf/imm6006.pdf
 
+See also
+--------
+* https://github.com/darenr/afinn - Sentiment analysis in Javascript with AFINN word list
+
+
 Travis tests
 ------------
 

@@ -23,6 +23,25 @@ With emoticons:
     >>> afinn.score('I saw that yesterday :)')
     2.0
 
+With multiple sentences (here with data from an Austen novel available in Gutenberg):
+
+    >>> from afinn import Afinn
+    >>> from nltk.corpus import gutenberg
+    >>> import textwrap
+    >>> afinn = Afinn()
+    >>> sentences = (" ".join(wordlist) for wordlist in gutenberg.sents('austen-sense.txt'))
+    >>> scored_sentences = ((afinn.score(sent), sent) for sent in sentences)
+    >>> sorted_sentences = sorted(scored_sentences)
+    >>> print("\n".join(textwrap.wrap(sorted_sentences[0][1], 70)))
+    To attach myself to your sister , therefore , was not a thing to be
+    thought of ;-- and with a meanness , selfishness , cruelty -- which no
+    indignant , no contemptuous look , even of yours , Miss Dashwood , can
+    ever reprobate too much -- I was acting in this manner , trying to
+    engage her regard , without a thought of returning it .-- But one
+    thing may be said for me : even in that horrid state of selfish vanity
+    , I did not know the extent of the injury I meditated , because I did
+    not THEN know what it was to love .
+
 Citation
 --------
 If you as a scientist use the wordlist or the code please cite this one: 

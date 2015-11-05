@@ -168,5 +168,4 @@ def test_emoticon_upper_case():
     # assert score > 0
 
     score = afinn.score('It is so: :D')
-    # assert score > 0 
-
+    # assert score > 0

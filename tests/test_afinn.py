@@ -99,16 +99,16 @@ def test_score_with_pattern():
 
 def test_score_with_wordlist():
     afinn = Afinn()
-    score = afinn.score('Rather good.')
+    score = afinn.score_with_wordlist('Rather good.')
     assert score > 0
 
-    score = afinn.score('Rather GOOD.')
+    score = afinn.score_with_wordlist('Rather GOOD.')
     assert score > 0
 
 
 def test_score_with_wordlist_empty():
     afinn = Afinn()
-    score = afinn.score('')
+    score = afinn.score_with_wordlist('')
     assert score == 0.0
 
 

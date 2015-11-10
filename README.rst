@@ -60,3 +60,6 @@ Travis tests
 
 .. image:: https://travis-ci.org/fnielsen/afinn.svg?branch=master
     :target: https://travis-ci.org/fnielsen/afinn
+
+.. image:: https://coveralls.io/repos/fnielsen/afinn/badge.svg?branch=master&service=github :target: https://coveralls.io/github/fnielsen/afinn?branch=master 
+

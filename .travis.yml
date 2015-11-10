@@ -5,10 +5,5 @@ env:
   - TOX_ENV=flake8
 install:
   - pip install tox
-  - pip install coverage
-  - pip install coveralls
 script:
   - tox -e $TOX_ENV
-  - coverage run --source=afinn setup.py test
-after_success:
-  coveralls

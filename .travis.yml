@@ -5,11 +5,10 @@ env:
   - TOX_ENV=flake8
 install:
   - pip install tox
-  - pip install pytest
-  - pip install pytest-cov
+  - pip install coverage
   - pip install coveralls
 script:
   - tox -e $TOX_ENV
-  - py.test --cov=afinn tests
+  - coverage run --source=afinn setup.py test
 after_success:
   coveralls

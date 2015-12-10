@@ -52,6 +52,7 @@ Paper with supplement: http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/6006
 
 See also
 --------
+* http://neuro.compute.dtu.dk/wiki/AFINN - Brede Wiki entry on AFINN with pointers to many scientific papers
 * https://github.com/darenr/afinn - Sentiment analysis in Javascript with AFINN word list
 
 

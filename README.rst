@@ -64,3 +64,6 @@ Travis tests
 
 .. image:: https://coveralls.io/repos/fnielsen/afinn/badge.svg?branch=master&service=github :target: https://coveralls.io/github/fnielsen/afinn?branch=master 
 
+.. image:: https://www.quantifiedcode.com/api/v1/project/0bcc1cd5b8f54a0fbd2f2e6f226cfa4f/badge.svg
+  :target: https://www.quantifiedcode.com/app/project/0bcc1cd5b8f54a0fbd2f2e6f226cfa4f
+  :alt: Code issues

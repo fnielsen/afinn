@@ -67,3 +67,7 @@ Travis tests
 .. image:: https://www.quantifiedcode.com/api/v1/project/0bcc1cd5b8f54a0fbd2f2e6f226cfa4f/badge.svg
   :target: https://www.quantifiedcode.com/app/project/0bcc1cd5b8f54a0fbd2f2e6f226cfa4f
   :alt: Code issues
+
+.. image:: https://img.shields.io/pypi/dm/afinn.svg?style=flat
+   :target: https://pypi.python.org/pypi/afinn
+   :alt: Downloads

@@ -56,8 +56,8 @@ See also
 * https://github.com/darenr/afinn - Sentiment analysis in Javascript with AFINN word list
 
 
-Travis tests
-------------
+Travis et al.
+-------------
 
 .. image:: https://travis-ci.org/fnielsen/afinn.svg?branch=master
     :target: https://travis-ci.org/fnielsen/afinn
@@ -71,3 +71,7 @@ Travis tests
 .. image:: https://img.shields.io/pypi/dm/afinn.svg?style=flat
    :target: https://pypi.python.org/pypi/afinn
    :alt: Downloads
+
+.. image:: https://www.openhub.net/p/afinn/widgets/project_thin_badge.gif
+   :target: https://www.openhub.net/p/afinn
+   :alt: Open Hub

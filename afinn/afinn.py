@@ -332,11 +332,43 @@ class Afinn(object):
             Sentiment analysis score for text
 
         """
-        # TODO: ":D" is not matched
-        words = self.find_all(text)
-        word_scores = (self._dict[word] for word in words)
+        word_scores = self.scores_with_pattern(text)
         score = float(sum(word_scores))
         return score
+
+    def scores_with_pattern(self, text):
+        """Score text based on pattern matching.
+
+        Performs the actual sentiment analysis on a text. It uses a regular
+        expression match against the word list.
+
+        The output is a list of float variables for each matched word or
+        phrase in the word list.
+
+        Parameters
+        ----------
+        text : str
+            Text to be analyzed for sentiment.
+
+        Returns
+        -------
+        scores : list of floats
+            Sentiment analysis scores for text
+
+        Examples
+        --------
+        >>> afinn = Afinn()
+        >>> afinn.scores_with_pattern('Good and bad')
+        [3, -3]
+
+        >>> afinn.scores_with_pattern('some kind of idiot')
+        [0, -3]
+
+        """
+        # TODO: ":D" is not matched
+        words = self.find_all(text)
+        scores = [self._dict[word] for word in words]
+        return scores
 
     def score_with_wordlist(self, text):
         """Score text based on initial word split.
@@ -360,3 +392,5 @@ class Afinn(object):
         return score
 
     score = score_with_pattern
+
+    scores = scores_with_pattern

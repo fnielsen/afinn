@@ -6,7 +6,7 @@ from setuptools import setup
 setup(
     name='afinn',
     packages=['afinn'],
-    version='0.0.1pre1',
+    version='0.1',
     author='Finn Aarup Nielsen',
     author_email='faan@dtu.dk',
     description='AFINN sentiment analysis',

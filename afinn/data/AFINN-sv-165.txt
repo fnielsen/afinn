@@ -195,7 +195,7 @@ uppskattar	2
 Värdering	2
 orolig	-2
 lämpligt	2
-på	lämpligt	sätt	2
+på lämpligt sätt	2
 godkännande	2
 godkänd	2
 godkänner	2
@@ -234,7 +234,7 @@ locka	2
 attraktion	2
 sevärdheter	2
 attraktiv	2
-ett	snyggt	2
+ett snyggt	2
 attraktions	2
 attraherar	1
 djärva	3
@@ -312,7 +312,7 @@ välgörare	2
 välgörare	2
 nytta	2
 fördelar	2
-dragit	nytta	2
+dragit nytta	2
 benefit	2
 välvilligt	3
 beröva	-2
@@ -320,7 +320,7 @@ sörjande	-2
 bereaves	-2
 bereaving	-2
 bästa	3
-bästa	jävla	4
+bästa jävla	4
 förråda	-3
 svek	-3
 förrådde	-3
@@ -389,7 +389,7 @@ bravura	3
 bryta	-2
 brutit	-2
 överträdelser	-2
-bryter	mot	-2
+bryter mot	-2
 genombrott	3
 hisnande	5
 muta	-3
@@ -424,7 +424,7 @@ lugn	2
 lugnade	2
 lugnande	2
 lugnar	2
-kan	inte	stå	-3
+kan inte stå	-3
 avbryta	-1
 annulleras	-1
 avbryta	-1
@@ -440,7 +440,7 @@ försiktig	2
 noggrant	2
 carefulness	2
 slarvig	-2
-bryr	sig	2
+bryr sig	2
 bry	2
 tjänat	-2
 olyckan	-2
@@ -630,7 +630,7 @@ dömd	-2
 övertygar	1
 convivial	2
 kyla	1
-cool	stuff	3
+cool stuff	3
 hörn	-2
 liket	-1
 korrupta	-3
@@ -708,8 +708,8 @@ skadad	-3
 skadestånd	-3
 skadligt	-3
 fan	-2
-jävla	söt	3
-damn	good	4
+jävla söt	3
+damn good	4
 förbannat	-4
 damnit	-4
 fara	-2
@@ -819,9 +819,9 @@ deportationerna	-2
 deprimerad	-2
 deprimerande	-2
 deprivation	-3
-spåra	ur	-2
-spårade	ur	-2
-spårar	ur	-2
+spåra ur	-2
+spårade ur	-2
+spårar ur	-2
 övergiven	-2
 förlöjliga	-2
 förlöjligade	-2
@@ -912,7 +912,7 @@ misstro	-2
 kassera	-1
 kasseras	-1
 kasta	-1
-kastas	överbord	-1
+kastas överbord	-1
 urskiljning	2
 obehag	-2
 tröst	-2
@@ -1007,7 +1007,7 @@ avleda	-1
 yr	-1
 ducka	-2
 tvivelaktiga	-2
-fungerar	inte	-3
+fungerar inte	-3
 smärtsam	-2
 donera	2
 donerade	2
@@ -1072,7 +1072,7 @@ eery	-2
 effektiv	2
 effektivt	2
 effektivitet	2
-utan	ansträngning	2
+utan ansträngning	2
 upprymd	3
 upprymdhet	3
 elegant	2
@@ -1108,7 +1108,7 @@ engagera	1
 ingriper	1
 engrossed	1
 fängslande	3
-njuta	av	2
+njuta av	2
 trevlig	2
 haft	2
 njuter	2
@@ -1132,7 +1132,7 @@ företagsam	1
 underhållande	2
 enthral	3
 entusiastiskt	3
-med	titeln	1
+med titeln	1
 anförtros	2
 avundas	-1
 avundsjuk	-2
@@ -1198,7 +1198,7 @@ expanderar	1
 utvisa	-2
 utvisas	-2
 utvisa	-2
-driver	ut	-2
+driver ut	-2
 sakkunnigt	2
 utnyttja	-2
 exploateras	-2
@@ -1211,8 +1211,8 @@ exponerade	-1
 exponerar	-1
 exponera	-1
 utsökta	3
-sträcker	sig	1
-sträcker	sig	1
+sträcker sig	1
+sträcker sig	1
 extremist	-2
 extremister	-2
 sprudlande	4
@@ -1288,10 +1288,10 @@ fruktade	-2
 orädd	2
 fearlessness	2
 fruktad	-2
-Fed	up	-3
+Fed up	-3
 svag	-2
 känsla	1
-grova	brott	-3
+grova brott	-3
 brott	-3
 fertil	2
 brinnande	2
@@ -1385,16 +1385,16 @@ Fuckface	-4
 Fuckhead	-4
 fuckin	-4
 jävla	-4
-jävla	fantastiskt	4
-jävla	vacker	4
-jävla	söt	4
-jävla	fantastiskt	4
-jävligt	bra	4
-jävligt	bra	4
-jävla	hett	2
-jävla	kärlek	4
-jävla	älskar	4
-jävla	perfekt	4
+jävla fantastiskt	4
+jävla vacker	4
+jävla söt	4
+jävla fantastiskt	4
+jävligt bra	4
+jävligt bra	4
+jävla hett	2
+jävla kärlek	4
+jävla älskar	4
+jävla perfekt	4
 Fucktard	-4
 fud	-3
 fuked	-4
@@ -1471,13 +1471,13 @@ större	3
 störst	3
 girighet	-3
 girig	-2
-grön	tvätt	-3
+grön tvätt	-3
 greenwashing	-3
 greenwash	-3
 greenwasher	-3
 greenwashers	-3
 greenwashing	-3
-hälsa	på	1
+hälsa på	1
 möttes	1
 hälsning	1
 hälsningar	2
@@ -1529,7 +1529,7 @@ härdig	2
 skada	-2
 skadas	-2
 skadligt	-2
-Att	skada	-2
+Att skada	-2
 harmoni	2
 harmonisk	2
 harmon	2
@@ -1717,7 +1717,7 @@ hänsynslös	-2
 olägenhet	-2
 obekvämt	-2
 öka	1
-ökade	med	1
+ökade med	1
 indecisive	-2
 oförstörbar	2
 åtalats	-2
@@ -1781,7 +1781,7 @@ förnya	1
 utvecklar	1
 innovation	1
 innovativ	2
-ur	funktion	-2
+ur funktion	-2
 inkvisitionen	-2
 Fråg	2
 galen	-2
@@ -2058,7 +2058,7 @@ mirthful	3
 mirthfully	3
 missköter	-2
 misbehaved	-2
-uppför	sig	illa	-2
+uppför sig illa	-2
 missköter	-2
 misbranding	-3
 miscast	-2
@@ -2077,14 +2077,14 @@ misär	-2
 feltändning	-2
 olycka	-2
 misgiving	-2
-felaktig	information	-2
+felaktig information	-2
 felunderrättad	-2
 misstolkas	-2
 vilse	-3
 misleaded	-3
 vilseledande	-3
 vilseleder	-3
-tappa	bort	-2
+tappa bort	-2
 felplacerad	-2
 förlägger	-2
 misplacing	-2
@@ -2178,16 +2178,16 @@ tjusig	2
 niggas	-5
 neger	-5
 ingen	-1
-ingen	kul	-3
+ingen kul	-3
 ädla	2
 ädlaste	2
 bullriga	-1
-icke	godkänd	-2
+icke godkänd	-2
 nonsens	-2
 noob	-2
 Nosy	-2
-inte	bra	-2
-fungerar	inte	-3
+inte bra	-2
+fungerar inte	-3
 anmärkningsvärd	2
 märkbar	2
 ökända	-2
@@ -2602,7 +2602,7 @@ rikt	2
 löjligt	-3
 rig	-1
 riggade	-1
-rätt	riktning	3
+rätt riktning	3
 rättfärdighet	2
 rättmätiga	2
 rättmätigt	2
@@ -2683,7 +2683,7 @@ skrek	-2
 skrikande	-2
 skriker	-2
 skruvas	-2
-skruvas	upp	-3
+skruvas upp	-3
 avskum	-3
 scumbag	-4
 sömlös	2
@@ -2812,7 +2812,7 @@ löste	1
 löser	1
 lösa	1
 dystra	-2
-någon	typ	0
+någon typ	0
 son-of-a-tik	-5
 lugna	3
 lugnade	3
@@ -3101,9 +3101,9 @@ oförmögen	-2
 oacceptabelt	-2
 omättligt	-2
 uppskattad	-2
-ej	godkänd	-2
+ej godkänd	-2
 oattraktivt	-2
-inte	tillgänglig	-1
+inte tillgänglig	-1
 fåfäng	-2
 omedvetna	-2
 outhärdlig	-2
@@ -3128,7 +3128,7 @@ undermineras	-2
 minerar	-2
 underminera	-2
 sämre	-2
-sämre	än	-2
+sämre än	-2
 presterande	-2
 underpresterar	-2
 förtjänar	-2
@@ -3188,7 +3188,7 @@ osunt	-2
 instabil	-2
 ostoppbar	2
 misslyckat	-2
-utan	framgång	-2
+utan framgång	-2
 framgångslös	-2
 ouppburen	-2
 osäker	-1
@@ -3222,7 +3222,7 @@ vibrerande	3
 vicious	-2
 offret	-3
 repressalier	-3
-göra	till	offer	-3
+göra till offer	-3
 offer	-3
 diskriminerar	-3
 victimizing	-3
@@ -3252,7 +3252,7 @@ dygdiga	2
 virulent	-2
 syn	1
 visionär	3
-skapa	visioner	1
+skapa visioner	1
 syner	1
 vitalitet	3
 vitamin	1
@@ -3298,10 +3298,10 @@ Välkommen	2
 välkomnas	2
 välkomnar	2
 välbefinnande	2
-väl	championed	3
+väl championed	3
 välutvecklad	2
 väletablerade	2
-väl	fokuserad	2
+väl fokuserad	2
 Välpreparerade	2
 välproportionerad	2
 nyckfullt	1
@@ -3343,7 +3343,7 @@ Wowow	4
 Wowww	4
 vreda	-3
 vrak	-2
-rycks	loss	-2
+rycks loss	-2
 fel	-2
 oegentligheter	-2
 förseelser	-2

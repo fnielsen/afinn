@@ -3337,6 +3337,7 @@ dyrkade	3
 värsta	-3
 värt	2
 värdelös	-2
+värdelöst	-2
 värdig	2
 wow	4
 Wowow	4

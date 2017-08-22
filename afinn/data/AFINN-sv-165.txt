@@ -77,21 +77,15 @@ adore	3
 ädla	3
 adores	3
 beundrande	3
-adoringly	3
-advanced	1
 fördel	2
 fördelaktigt	2
 med fördel	2
 fördelar	2
 äventyr	2
-äventyr	2
-äventyr	2
 motståndare	-1
 tillrådligt	1
 påverkas	-1
 ömhet	3
-given	3
-affectionateness	3
 drabbad	-1
 prisvärd	2
 förolämpad	-1
@@ -109,7 +103,6 @@ bestört	-2
 agog	2
 våndas	-3
 ångestfull	-3
-agonises	-3
 plågsamma	-3
 våndas	-3
 ångestfull	-3
@@ -143,7 +136,6 @@ ambitiös	2
 ambivalent	-1
 vänskap	2
 roa	3
-road	3
 amusement	3
 nöjen	3
 ilska	-3
@@ -154,7 +146,6 @@ arg	-3
 ångestfyllda	-3
 fientlighet	-2
 irritera	-2
-irritation	-2
 irriterad	-2
 irriterande	-2
 retar	-2
@@ -181,7 +172,6 @@ skrämmande	-2
 tilltalande	2
 blidka	2
 blidkas	2
-appeases	2
 lugnande	2
 applåderar	2
 applåde	2
@@ -204,7 +194,6 @@ gripa	-2
 greps	-3
 gripanden	-2
 arroganta	-2
-arsehole	-4
 ashame	-2
 skämmas	-2
 ass	-4
@@ -214,8 +203,6 @@ misshandel	-2
 överfall	-2
 tillgångs	2
 tillgångar	2
-Assfucking	-4
-asshole	-4
 förvånad	2
 förvåna	3
 förbluffad	3
@@ -224,7 +211,6 @@ förbluffande	3
 förvånar	3
 ohyggliga	-3
 illdåd	-3
-attack	-1
 attacke	-1
 attackerar	-1
 attacker	-1

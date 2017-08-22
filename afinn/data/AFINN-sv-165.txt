@@ -1122,7 +1122,7 @@ reta	-2
 rasande	-2
 ursinniga	-2
 enraging	-2
-HÄNFÖRA	3
+hänföra	3
 förslava	-2
 förslavade	-2
 förslavar	-2
@@ -1288,7 +1288,6 @@ fruktade	-2
 orädd	2
 fearlessness	2
 fruktad	-2
-Fed up	-3
 svag	-2
 känsla	1
 grova brott	-3
@@ -1442,15 +1441,10 @@ härliga	2
 ära	2
 dyster	-2
 gud	1
-goddamn	-3
 gudagåva	4
 guld	2
 bra	3
-goodlooking	3
-goodmorning	1
 godhet	3
-goodwill	3
-goofiness	-2
 fånig	-2
 grace	1
 graciös	2
@@ -1472,11 +1466,6 @@ störst	3
 girighet	-3
 girig	-2
 grön tvätt	-3
-greenwashing	-3
-greenwash	-3
-greenwasher	-3
-greenwashers	-3
-greenwashing	-3
 hälsa på	1
 möttes	1
 hälsning	1
@@ -1586,9 +1575,7 @@ hindra	-2
 hinder	-2
 bluff	-2
 ihåliga	-1
-homeless	-2
 hemlängtan	-2
-homicide	-2
 mord	-2
 ärlig	2
 ära	2
@@ -1612,7 +1599,6 @@ otäck	-3
 hemsk	-3
 fasansfulla	-3
 förskräckt	-3
-hospitalized	-2
 fientlig	-2
 huckster	-2
 kram	2
@@ -1628,7 +1614,6 @@ humor	2
 humoristisk	2
 humor	2
 humoristiskt	2
-hunger	-2
 hurra	5
 ont	-2
 skada	-2
@@ -3361,8 +3346,6 @@ xoxoxo	4
 xoxoxoxo	4
 ja	1
 längtan	1
-yeees	2
-ja	1
 ungdomlig	2
 äcklig	-2
 tumme	3

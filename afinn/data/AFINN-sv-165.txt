@@ -127,7 +127,6 @@ fantastiskt	4
 ambitiös	2
 vänskaplig	2
 roa	3
-road	3
 nöje	3
 nöjen	3
 ilska	-3
@@ -137,7 +136,6 @@ arg	-3
 plågad	-3
 fientlighet	-2
 förarga	-2
-irritation	-2
 irriterad	-2
 irriterande	-2
 retar	-2
@@ -190,7 +188,6 @@ lönnmord	-3
 överfall	-2
 tillgång	2
 tillgångar	2
-Assfucking	-4
 idiot	-4
 förvånad	2
 slå med häpnad	3
@@ -215,7 +212,6 @@ drar till sig	1
 djärv	3
 auktoritet	1
 hämnas	-2
-Avenged	-2
 hämnare	-2
 hämnare	-2
 hämnas	-2
@@ -246,8 +242,6 @@ dåligt	-3
 dålighet	-3
 räddningsaktion	-2
 balanserad	1
-Bamboozle	-2
-Bamboozles	-2
 förbjuda	-2
 förvisa	-1
 bankrutt	-3
@@ -280,7 +274,6 @@ donatorer	2
 dra nytta	2
 fördelar	2
 dragit nytta	2
-benefit	2
 välvillig	3
 beröva	-2
 berövad	-2
@@ -320,7 +313,6 @@ blockera	-1
 blockad	-2
 blockerad	-1
 blockering	-1
-block	-1
 blodig	-3
 suddigt	-2
 skrytsam	-2
@@ -328,7 +320,6 @@ djärv	2
 djärvt	2
 bomba	-1
 lyft	1
-boost	1
 öka	1
 boostar	1
 borra	-2
@@ -365,7 +356,6 @@ briljans	3
 rask	2
 pank	-1
 bruten	-1
-Brutal	-3
 brutalt	-3
 mobbad	-2
 skitsnack	-4
@@ -443,7 +433,6 @@ glatt	2
 glädjande	2
 glädjelös	-2
 Skål	2
-glad	3
 vårda	2
 omhuldade	2
 omhuldar	2
@@ -492,7 +481,6 @@ tröstande	2
 bekvämligheter	2
 komisk	1
 berömma	2
-Commended	2
 begå	1
 engagemang	2
 begår	1
@@ -592,7 +580,6 @@ kramp	-1
 skit	-3
 kass	-3
 krascha	-2
-galnare	-2
 galnaste	-2
 galen	-2
 kreativ	2
@@ -603,7 +590,6 @@ brottslighet	-3
 brott	-3
 kriminell	-3
 brottslingar	-3
-kris	-3
 kritiker	-2
 klandra	-2
 kritiserats	-2
@@ -1665,13 +1651,10 @@ skämtsam	2
 ansluta sig	1
 skämt	2
 skämt	2
-glad	2
 gladlynt	2
 glädje	3
-glad	3
 glatt	3
 glädjelös	-2
-glad	3
 jublande	3
 nervös	-1
 rättvisa	2
@@ -1811,7 +1794,6 @@ Memoriam	-2
 hot	-2
 hotas	-2
 barmhärtighet	2
-glad	3
 fascinerande	3
 röra	-2
 trasslat	-2

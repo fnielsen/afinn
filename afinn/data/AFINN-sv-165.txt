@@ -98,6 +98,7 @@ våndas	-3
 plågsamma	-3
 våndas	-3
 ångestfull	-3
+agoniserar	-3
 plågsamma	-3
 överens	1
 angenämt	2
@@ -135,6 +136,7 @@ irritera	-2
 irriterad	-2
 irriterande	-2
 retar	-2
+antagonistisk	-2
 förväntan	1
 ångest	-2
 ängslig	-2
@@ -662,6 +664,9 @@ brister	-2
 underskott	-2
 deformeras	-2
 missbildningar	-2
+deformitet	-2
+degradera	-2
+degraderar	-2
 bedra	-3
 skickliga	2
 nedlagda	-2

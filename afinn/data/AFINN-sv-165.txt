@@ -708,7 +708,6 @@ demoraliserar	-2
 avslag	-2
 avslag	-2
 nekas	-2
-denier	-2
 förnekar	-2
 fördöma	-2
 fördömer	-2
@@ -1829,7 +1828,6 @@ felrapportering	-2
 förvränga	-2
 förvrängning	-2
 förvrängningar	-2
-Misrepresented	-2
 förvränga	-2
 Fröken	-2
 missade	-2
@@ -2153,8 +2151,6 @@ rasister	-3
 rasa	-2
 regnig	-1
 utläggning	-3
-Ranter	-3
-Ranters	-3
 gormanden	-3
 våldta	-4
 våldtagen	-4
@@ -2897,14 +2893,12 @@ vinna	4
 vinnare	4
 vinnande	4
 segrar	4
-WINWIN	3
 visdom	1
 önskar	1
 lyckönskningar	1
 önskar	1
 uttag	-3
 sinnen	2
-BEDRÖVAD	-2
 bedrövad	-3
 vann	3
 underbar	4

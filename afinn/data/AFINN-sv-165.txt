@@ -158,6 +158,7 @@ bestört	-2
 skrämmande	-2
 lockande	2
 blidka	2
+ett snyggt	3
 lugnande	2
 applådera	2
 applåde	2
@@ -228,6 +229,7 @@ väntar	-1
 tilldela	3
 tilldelats	3
 utmärkelser	3
+utmärkelse	3
 grymt bra	4
 förfärlig	-3
 besvärlig	-2

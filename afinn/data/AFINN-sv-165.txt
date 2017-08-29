@@ -388,7 +388,6 @@ försiktigt	2
 slarvig	-2
 bekymmer	2
 omtänksam	2
-inlösen	in
 skadade	-2
 katastrof	-3
 katastrofal	-4
@@ -1154,7 +1153,6 @@ fruktade	-2
 orädd	2
 oräddhet	2
 skrämmande	-2
-matad	up
 svag	-2
 känsla	1
 grov förbrytelse	-3
@@ -1670,7 +1668,6 @@ dödade	-3
 dödande	-3
 fiender	-3
 snäll	2
-snäll	of
 vänlighet	2
 kyss	2
 beröm	3
@@ -1896,7 +1893,6 @@ nervöst	-2
 trevlig	3
 tjusig	2
 Nej	-1
-Nej	fun
 ädel	2
 ädlaste	2
 högljudd	-1
@@ -2264,7 +2260,6 @@ rikt	2
 löjlig	-3
 rigg	-1
 riggade	-1
-höger	direction
 rättfärdighet	2
 rättmätig	2
 rättmätigt	2
@@ -2438,7 +2433,6 @@ löst	1
 löser	1
 lösning	1
 dyster	-2
-några	kind
 son-of-a-tik	-5
 lugna	3
 lugnas	3

@@ -110,6 +110,17 @@ def test_dutch():
     score = afinn.score(u('overeenkomst'))
     assert score > 0
 
+def test_chinese():
+    afinn = Afinn(language='zh')
+    score = afinn.score('含情脉脉')
+    assert score == 3
+
+    score = afinn.score(u('愤怒'))
+    assert score == -3
+
+    score = afinn.score(u('有点'))
+    assert score == 0
+
 
 def test_score_with_pattern():
     afinn = Afinn(language='da')

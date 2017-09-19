@@ -99,6 +99,39 @@ def test_swedish():
     score = afinn.score(u('ett snyggt'))
     assert score > 0
 
+def test_dutch():
+    afinn = Afinn(language='nl')
+    score = afinn.score('hoer')
+    assert score == -4
+
+    score = afinn.score(u('aanbiddelijk'))
+    assert score == 3
+
+    score = afinn.score(u('overeenkomst'))
+    assert score > 0
+
+def test_chinese():
+    afinn = Afinn(language='zh')
+    score = afinn.score('含情脉脉')
+    assert score == 3
+
+    score = afinn.score(u('愤怒'))
+    assert score == -3
+
+    score = afinn.score(u('有点'))
+    assert score == 0
+
+
+def test_german():
+    afinn = Afinn(language='de')
+    score = afinn.score('verabscheuen')
+    assert score == -3
+
+    score = afinn.score(u('glücklich'))
+    assert score == 3
+
+    score = afinn.score(u('zurückbleiben'))
+    assert score == -2
 
 def test_score_with_pattern():
     afinn = Afinn(language='da')

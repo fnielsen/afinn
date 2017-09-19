@@ -122,6 +122,17 @@ def test_chinese():
     assert score == 0
 
 
+def test_german():
+    afinn = Afinn(language='de')
+    score = afinn.score('verabscheuen')
+    assert score == -3
+
+    score = afinn.score(u('glücklich'))
+    assert score == 3
+
+    score = afinn.score(u('zurückbleiben'))
+    assert score == -2
+
 def test_score_with_pattern():
     afinn = Afinn(language='da')
     score = afinn.score('ikke god')

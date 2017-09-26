@@ -10,13 +10,19 @@ Examples
     >>> afinn = Afinn()
     >>> afinn.score('This is utterly excellent!')
     3.0
-    
+
 In Danish:
 
     >>> afinn = Afinn(language='da')
     >>> afinn.score('Hvis ikke det er det mest afskyelige flueknepperi...')
     -6.0
-    
+
+In Swedish:
+
+	>>> afinn = Afinn(language='sv')
+	>>> afinn.score('det är inte bra')
+	-2.0
+
 With emoticons:
 
     >>> afinn = Afinn(emoticons=True)
@@ -44,7 +50,7 @@ With multiple sentences (here with data from an Austen novel available in Gutenb
 
 Citation
 --------
-If you as a scientist use the wordlist or the code please cite this one: 
+If you as a scientist use the wordlist or the code please cite this one:
 
 * Finn Årup Nielsen, "A new ANEW: evaluation of a word list for sentiment analysis in microblogs", Proceedings of the ESWC2011 Workshop on 'Making Sense of Microposts': Big things come in small packages. Volume 718 in CEUR Workshop Proceedings: 93-98. 2011 May. Matthew Rowe, Milan Stankovic, Aba-Sah Dadzie, Mariann Hardey (editors)
 
@@ -62,7 +68,7 @@ Travis et al.
 .. image:: https://travis-ci.org/fnielsen/afinn.svg?branch=master
     :target: https://travis-ci.org/fnielsen/afinn
 
-.. image:: https://coveralls.io/repos/fnielsen/afinn/badge.svg?branch=master :target: https://coveralls.io/github/fnielsen/afinn?branch=master 
+.. image:: https://coveralls.io/repos/fnielsen/afinn/badge.svg?branch=master :target: https://coveralls.io/github/fnielsen/afinn?branch=master
 
 .. image:: https://www.quantifiedcode.com/api/v1/project/0bcc1cd5b8f54a0fbd2f2e6f226cfa4f/badge.svg
   :target: https://www.quantifiedcode.com/app/project/0bcc1cd5b8f54a0fbd2f2e6f226cfa4f

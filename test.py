@@ -18,7 +18,6 @@ score = afinn.score(u('\xe7ok iyi'))
 print score
 
 print u('i\u011Fren\u00E7')
-score = afinn.score(u('i\u011Fren\u00E7'))
-print score
-score = afinn.score(u('iğrenç'))
+print u('\xe7ok k\xf6t\xfc')
+score = afinn.score(u('\xe7ok k\xf6t\xfc'))
 print score

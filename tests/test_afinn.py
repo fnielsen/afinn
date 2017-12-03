@@ -107,8 +107,8 @@ def test_turkish():
 
     score = afinn.score(u('\xe7ok iyi'))
     assert score > 0
-    
-    score = afinn.score(u('i\u011Fren\u00E7'))
+
+    score = afinn.score(u('\xe7ok k\xf6t\xfc'))
     assert score < 0
 
 

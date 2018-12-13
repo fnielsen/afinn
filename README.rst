@@ -23,6 +23,12 @@ In Swedish:
 	>>> afinn.score('det är inte bra')
 	-2.0
 
+In Finnish:
+
+	>>> afinn = Afinn(language='fi')
+	>>> afinn.score('Siellä on uusi hyvä juttu, katsokaa ja kuunnelkaa ihmeessä.')
+	3.0
+
 With emoticons:
 
     >>> afinn = Afinn(emoticons=True)

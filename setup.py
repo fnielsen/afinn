@@ -10,7 +10,7 @@ setup(
     author='Finn Aarup Nielsen',
     author_email='faan@dtu.dk',
     description='AFINN sentiment analysis',
-    license='GPL',
+    license='Apache License 2.0',
     keywords='sentiment analysis',
     url='https://github.com/fnielsen/afinn',
     package_data={'afinn': ['data/*.txt', 'data/LICENSE']},

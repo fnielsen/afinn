@@ -9,11 +9,11 @@ import re
 
 from os.path import dirname, join
 
-
 LANGUAGE_TO_FILENAME = {
     'da': 'AFINN-da-32.txt',
     'en': 'AFINN-en-165.txt',
     'emoticons': 'AFINN-emoticon-8.txt',
+    'emoji': 'AFINN-emoji.txt',
     'fr': 'AFINN-fr-165.txt',
     'sv': 'AFINN-sv-165.txt',
     }
@@ -56,7 +56,8 @@ class Afinn(object):
 
     """
 
-    def __init__(self, language="en", emoticons=False, word_boundary=True):
+    def __init__(self, language="en", emoticons=False, emoji=False,
+                 word_boundary=True):
         """Setup dictionary from data file.
 
         The language parameter can be set to English (en) or Danish (da).
@@ -67,31 +68,46 @@ class Afinn(object):
             Specify language dictionary.
         emoticons : bool, optional
             Includes emoticons in the token list
+        emoji : bool, optional
+            Includes emoji in the token list
         word_boundary : bool, optional
             Use word boundary match in the regular expression.
 
         """
         filename = LANGUAGE_TO_FILENAME[language]
         full_filename = self.full_filename(filename)
-        if emoticons:
-            # Words
-            self._dict = self.read_word_file(full_filename)
-            regex_words = self.regex_from_tokens(
-                list(self._dict),
-                word_boundary=True, capture=False)
 
-            # Emoticons
-            filename_emoticons = LANGUAGE_TO_FILENAME['emoticons']
-            full_filename_emoticons = self.full_filename(filename_emoticons)
-            emoticons_and_score = self.read_word_file(full_filename_emoticons)
-            self._dict.update(emoticons_and_score)
-            regex_emoticons = self.regex_from_tokens(
-                list(emoticons_and_score), word_boundary=False,
-                capture=False)
+        if emoticons or emoji:
+            self._dict = self.read_word_file(full_filename)
+            regexp_words = self.regex_from_tokens(
+                list(self._dict),
+                word_boundary=True,
+                capture=False
+            )
+
+            words = []
+            if emoticons:
+                fname = LANGUAGE_TO_FILENAME['emoticons']
+                full_fname = self.full_filename(fname)
+                emoticon_score_dct = self.read_word_file(full_fname)
+                self._dict.update(emoticon_score_dct)
+                words.extend(list(emoticon_score_dct))
+
+            if emoji:
+                full_fname = self.full_filename(LANGUAGE_TO_FILENAME['emoji'])
+                emoji_score_dct = self.read_word_file(full_fname)
+                self._dict.update(emoji_score_dct)
+                words.extend(list(emoji_score_dct))
+
+            regexp_extra = self.regex_from_tokens(
+                words,
+                word_boundary=False,
+                capture=False
+            )
 
             # Combined words and emoticon regular expression
-            regex = '(' + regex_words + '|' + regex_emoticons + ')'
-            self._setup_pattern_from_regex(regex)
+            regexp = '(%s|%s)' % (regexp_words, regexp_extra)
+            self._setup_pattern_from_regex(regexp)
 
         else:
             self.setup_from_file(full_filename, word_boundary=word_boundary)

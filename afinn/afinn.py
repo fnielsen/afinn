@@ -8,6 +8,7 @@ import codecs
 import re
 
 from os.path import dirname, join
+from nltk import PorterStemmer
 
 
 LANGUAGE_TO_FILENAME = {
@@ -56,10 +57,12 @@ class Afinn(object):
 
     """
 
-    def __init__(self, language="en", emoticons=False, word_boundary=True):
+    def __init__(self, language="en", emoticons=False, word_boundary=True, stem=False):
         """Setup dictionary from data file.
 
         The language parameter can be set to English (en) or Danish (da).
+
+        The stemmed parameter can be set to True if your input sentence has been stemmed.
 
         Parameters
         ----------
@@ -69,6 +72,8 @@ class Afinn(object):
             Includes emoticons in the token list
         word_boundary : bool, optional
             Use word boundary match in the regular expression.
+        stem : bool, optional
+            Use a stemmed word list
 
         """
         filename = LANGUAGE_TO_FILENAME[language]
@@ -76,6 +81,8 @@ class Afinn(object):
         if emoticons:
             # Words
             self._dict = self.read_word_file(full_filename)
+            if stem:
+                self._stem_wordlist()
             regex_words = self.regex_from_tokens(
                 list(self._dict),
                 word_boundary=True, capture=False)
@@ -94,7 +101,7 @@ class Afinn(object):
             self._setup_pattern_from_regex(regex)
 
         else:
-            self.setup_from_file(full_filename, word_boundary=word_boundary)
+            self.setup_from_file(full_filename, word_boundary=word_boundary, stem=stem)
 
         self._word_pattern = re.compile('\w+', flags=re.UNICODE)
 
@@ -146,7 +153,7 @@ class Afinn(object):
         """
         return join(self.data_dir(), filename)
 
-    def setup_from_file(self, filename, word_boundary=True):
+    def setup_from_file(self, filename, word_boundary=True, stem=False):
         """Setup data from data file.
 
         Read the word file and setup the regular expression pattern for
@@ -159,6 +166,11 @@ class Afinn(object):
 
         """
         self._dict = self.read_word_file(filename)
+
+        # Stem the word list
+
+        if stem:
+            self._stem_wordlist()
         self._setup_pattern_from_dict(word_boundary=word_boundary)
 
     @staticmethod
@@ -232,6 +244,13 @@ class Afinn(object):
             regex = '(' + regex + ')'
 
         return regex
+
+    def _stem_wordlist(self):
+        stemmer = PorterStemmer()
+        for word in list(self._dict.keys()):
+            stemmed = stemmer.stem(word)
+            self._dict[stemmed] = self._dict.pop(word)
+
 
     def _setup_pattern_from_regex(self, regex):
         """Set internal variable from regex string."""

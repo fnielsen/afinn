@@ -29,7 +29,7 @@ In French:
         >>> afinn.score('Vive la France')
         3.0
 
-In Spanish:
+In Spanish (source: https://raw.githubusercontent.com/jboscomendoza/rpubs/master/sentimientos_afinn/lexico_afinn.en.es.csv):
 
         >>> afinn = Afinn(language='es')
         >>> afinn.score('Esto es absolutamente excelente')

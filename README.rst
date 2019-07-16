@@ -27,13 +27,13 @@ In French:
 
         >>> afinn = Afinn(language='fr')
         >>> afinn.score('Vive la France')
-        .0
+        3.0
 
 In Spanish:
 
         >>> afinn = Afinn(language='es')
         >>> afinn.score('Esto es absolutamente excelente')
-        .0
+        3.0
 
 With emoticons:
 

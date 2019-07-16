@@ -87,6 +87,16 @@ def test_french():
     score = afinn.score(u('sans charme'))
     assert score < 0
 
+def test_spanish():
+    afinn = Afinn(language='es')
+    score = afinn.score('accidental')
+    assert score < 0
+
+    score = afinn.score(u('rompi\xf3'))
+    assert score < 0
+
+    score = afinn.score(u('sin encanto'))
+    assert score < 0
 
 def test_swedish():
     afinn = Afinn(language='sv')

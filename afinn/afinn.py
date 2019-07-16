@@ -15,6 +15,7 @@ LANGUAGE_TO_FILENAME = {
     'en': 'AFINN-en-165.txt',
     'emoticons': 'AFINN-emoticon-8.txt',
     'fr': 'AFINN-fr-165.txt',
+    'es': 'AFINN-es-tidytext.txt',
     'sv': 'AFINN-sv-165.txt',
     }
 

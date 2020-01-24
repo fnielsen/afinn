@@ -99,6 +99,17 @@ def test_swedish():
     score = afinn.score(u('ett snyggt'))
     assert score > 0
 
+def test_polish():
+    afinn = Afinn(language='pl')
+    score = afinn.score('kurwa')
+    assert score < 0
+
+    score = afinn.score('ambitny')
+    assert score > 0
+
+    score = afinn.score('arcydzieło')
+    assert score > 0
+
 
 def test_score_with_pattern():
     afinn = Afinn(language='da')

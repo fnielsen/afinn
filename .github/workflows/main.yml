@@ -11,6 +11,7 @@ jobs:
         python: [2.7, 3.5, 3.7, 3.9]
 
     steps:
+      - uses: actions/checkout@v2
       - name: Setup Python
         uses: actions/setup-python@v1
         with:

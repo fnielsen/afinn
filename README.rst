@@ -17,6 +17,12 @@ In Danish:
     >>> afinn.score('Hvis ikke det er det mest afskyelige flueknepperi...')
     -6.0
 
+In Finnish:
+
+	>>> afinn = Afinn(language='fi')
+	>>> afinn.score('Siellä on uusi hyvä juttu, katsokaa ja kuunnelkaa ihmeessä.')
+	3.0
+
 In Swedish:
 
 	>>> afinn = Afinn(language='sv')

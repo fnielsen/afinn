@@ -32,11 +32,12 @@ In Swedish:
 In Turkish:
 
 	>>> afinn = Afinn(language='tr')
+	>>> from six import u
 	>>> afinn.score(u('iyi de\u011Fil'))
 	-2.0
 
 	>>> afinn = Afinn(language='tr')
-	>>> afinn.score('iyi değil'.decoce('UTF-8'))
+	>>> afinn.score('iyi değil')
 	-2.0
 
 With emoticons:

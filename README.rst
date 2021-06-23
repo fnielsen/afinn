@@ -23,6 +23,16 @@ In Swedish:
 	>>> afinn.score('det är inte bra')
 	-2.0
 
+In Turkish:
+
+	>>> afinn = Afinn(language='tr')
+	>>> afinn.score(u('iyi de\u011Fil'))
+	-2.0
+
+	>>> afinn = Afinn(language='tr')
+	>>> afinn.score('iyi değil'.decoce('UTF-8'))
+	-2.0
+
 With emoticons:
 
     >>> afinn = Afinn(emoticons=True)

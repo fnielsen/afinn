@@ -76,6 +76,12 @@ def test_danish():
     assert score < 0
 
 
+def test_finnish():
+    afinn = Afinn(language='fi')
+    score = afinn.score('juttu, katsokaa ja kuunnelkaa.')
+    assert score == 0
+
+
 def test_french():
     afinn = Afinn(language='fr')
     score = afinn.score('accidentelle')

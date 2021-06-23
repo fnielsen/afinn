@@ -14,9 +14,11 @@ LANGUAGE_TO_FILENAME = {
     'da': 'AFINN-da-32.txt',
     'en': 'AFINN-en-165.txt',
     'emoticons': 'AFINN-emoticon-8.txt',
+    'fi': 'AFINN-fi-165.txt',
     'fr': 'AFINN-fr-165.txt',
     'es': 'AFINN-es-tidytext.txt',
     'sv': 'AFINN-sv-165.txt',
+    'tr': 'AFINN-tr-165.txt',
     }
 
 
@@ -58,7 +60,7 @@ class Afinn(object):
     """
 
     def __init__(self, language="en", emoticons=False, word_boundary=True):
-        """Setup dictionary from data file.
+        """Set up dictionary from data file.
 
         The language parameter can be set to English (en) or Danish (da).
 
@@ -97,7 +99,7 @@ class Afinn(object):
         else:
             self.setup_from_file(full_filename, word_boundary=word_boundary)
 
-        self._word_pattern = re.compile('\w+', flags=re.UNICODE)
+        self._word_pattern = re.compile(r'\w+', flags=re.UNICODE)
 
     def data_dir(self):
         """Return directory where the text files are.
@@ -148,7 +150,7 @@ class Afinn(object):
         return join(self.data_dir(), filename)
 
     def setup_from_file(self, filename, word_boundary=True):
-        """Setup data from data file.
+        """Set up data from data file.
 
         Read the word file and setup the regular expression pattern for
         matching.
@@ -241,7 +243,7 @@ class Afinn(object):
     def _setup_pattern_from_dict(self, word_boundary=True):
         """Pattern for identification of words from data files.
 
-        Setup of regular expression pattern for matching phrases from the data
+        Set up of regular expression pattern for matching phrases from the data
         files.
 
         Parameters

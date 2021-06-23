@@ -17,11 +17,11 @@ In Danish:
     >>> afinn.score('Hvis ikke det er det mest afskyelige flueknepperi...')
     -6.0
 
-In Swedish:
+In Finnish:
 
-	>>> afinn = Afinn(language='sv')
-	>>> afinn.score('det är inte bra')
-	-2.0
+	>>> afinn = Afinn(language='fi')
+	>>> afinn.score('Siellä on uusi hyvä juttu, katsokaa ja kuunnelkaa ihmeessä.')
+	3.0
 
 In French:
 
@@ -34,6 +34,23 @@ In Spanish ([English-translated-based](https://raw.githubusercontent.com/jboscom
         >>> afinn = Afinn(language='es')
         >>> afinn.score('Esto es absolutamente excelente')
         3.0
+
+In Swedish:
+
+	>>> afinn = Afinn(language='sv')
+	>>> afinn.score('det är inte bra')
+	-2.0
+
+In Turkish:
+
+	>>> afinn = Afinn(language='tr')
+	>>> from six import u
+	>>> afinn.score(u('iyi de\u011Fil'))
+	-2.0
+
+	>>> afinn = Afinn(language='tr')
+	>>> afinn.score('iyi değil')
+	-2.0
 
 With emoticons:
 

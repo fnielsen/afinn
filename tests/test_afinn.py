@@ -76,6 +76,12 @@ def test_danish():
     assert score < 0
 
 
+def test_finnish():
+    afinn = Afinn(language='fi')
+    score = afinn.score('juttu, katsokaa ja kuunnelkaa.')
+    assert score == 0
+
+
 def test_french():
     afinn = Afinn(language='fr')
     score = afinn.score('accidentelle')
@@ -108,6 +114,18 @@ def test_swedish():
 
     score = afinn.score(u('ett snyggt'))
     assert score > 0
+
+
+def test_turkish():
+    afinn = Afinn(language='tr')
+    score = afinn.score('kar')
+    assert score > 0
+
+    score = afinn.score(u('\xe7ok iyi'))
+    assert score > 0
+
+    score = afinn.score(u('\xe7ok k\xf6t\xfc'))
+    assert score < 0
 
 
 def test_score_with_pattern():

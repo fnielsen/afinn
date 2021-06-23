@@ -100,6 +100,18 @@ def test_swedish():
     assert score > 0
 
 
+def test_turkish():
+    afinn = Afinn(language='tr')
+    score = afinn.score('kar')
+    assert score > 0
+
+    score = afinn.score(u('\xe7ok iyi'))
+    assert score > 0
+
+    score = afinn.score(u('\xe7ok k\xf6t\xfc'))
+    assert score < 0
+
+
 def test_score_with_pattern():
     afinn = Afinn(language='da')
     score = afinn.score('ikke god')

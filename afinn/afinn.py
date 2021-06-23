@@ -96,7 +96,7 @@ class Afinn(object):
         else:
             self.setup_from_file(full_filename, word_boundary=word_boundary)
 
-        self._word_pattern = re.compile('\w+', flags=re.UNICODE)
+        self._word_pattern = re.compile(r'\w+', flags=re.UNICODE)
 
     def data_dir(self):
         """Return directory where the text files are.

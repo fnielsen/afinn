@@ -57,7 +57,7 @@ class Afinn(object):
     """
 
     def __init__(self, language="en", emoticons=False, word_boundary=True):
-        """Setup dictionary from data file.
+        """Set up dictionary from data file.
 
         The language parameter can be set to English (en) or Danish (da).
 
@@ -147,7 +147,7 @@ class Afinn(object):
         return join(self.data_dir(), filename)
 
     def setup_from_file(self, filename, word_boundary=True):
-        """Setup data from data file.
+        """Set up data from data file.
 
         Read the word file and setup the regular expression pattern for
         matching.
@@ -240,7 +240,7 @@ class Afinn(object):
     def _setup_pattern_from_dict(self, word_boundary=True):
         """Pattern for identification of words from data files.
 
-        Setup of regular expression pattern for matching phrases from the data
+        Set up of regular expression pattern for matching phrases from the data
         files.
 
         Parameters

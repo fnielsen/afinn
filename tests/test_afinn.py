@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Test of afinn."""
 
 
@@ -92,6 +93,18 @@ def test_french():
 
     score = afinn.score(u('sans charme'))
     assert score < 0
+
+
+def test_polish():
+    afinn = Afinn(language='pl')
+    score = afinn.score('kurwa')
+    assert score < 0
+
+    score = afinn.score('ambitny')
+    assert score > 0
+
+    score = afinn.score(u('arcydzie\u0142o'))
+    assert score > 0
 
 
 def test_swedish():

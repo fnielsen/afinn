@@ -82,8 +82,8 @@ See also
 Travis et al.
 -------------
 
-.. image:: https://travis-ci.org/fnielsen/afinn.svg?branch=master
-    :target: https://travis-ci.org/fnielsen/afinn
+.. image:: https://travis-ci.com/fnielsen/afinn.svg?branch=master
+    :target: https://travis-ci.com/fnielsen/afinn
 
 .. image:: https://coveralls.io/repos/fnielsen/afinn/badge.svg?branch=master :target: https://coveralls.io/github/fnielsen/afinn?branch=master
 

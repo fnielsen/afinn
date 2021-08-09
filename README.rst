@@ -3,6 +3,14 @@ afinn
 
 AFINN sentiment analysis in Python: Wordlist-based approach for sentiment analysis.
 
+How to install
+--------
+    >>> git clone https://github.com/fnielsen/afinn
+    >>> cd afinn
+    >>> python setup.py install
+
+
+
 Examples
 --------
 

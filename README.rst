@@ -85,6 +85,7 @@ See also
 --------
 * http://neuro.compute.dtu.dk/wiki/AFINN - Brede Wiki entry on AFINN with pointers to many scientific papers
 * https://github.com/darenr/afinn - Sentiment analysis in Javascript with AFINN word list
+* https://github.com/prograils/afinn - Sentiment analysis in Ruby with AFINN word list
 
 
 Travis et al.
